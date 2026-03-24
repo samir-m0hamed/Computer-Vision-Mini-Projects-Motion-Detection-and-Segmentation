@@ -1,10 +1,10 @@
-# 🎯 Segmentation Projects via Mask R-CNN
+#  Segmentation Projects via Mask R-CNN
 
 A compact and practical collection of **computer vision mini-projects** focused on:
 
-- 🎥 Video Analysis  
-- 🚨 Motion Detection & Monitoring  
-- 🧠 Object & People Segmentation  
+-  Video Analysis  
+-  Motion Detection & Monitoring  
+-  Object & People Segmentation  
 
 These projects demonstrate real-world pipelines using **Python + OpenCV**, with optional use of deep learning models like **Mask R-CNN**.
 
