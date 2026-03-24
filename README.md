@@ -123,13 +123,13 @@ Optional (depending on project):
 
 Run each script individually:
 
-    #  Burglar Detection
+    # Burglar Detection
     python "Burglar detection/burglar detection.py"
 
-    #  Live Object Segmentation
+    # Live Object Segmentation
     python "segment objects from a live video/objects segmentation.py"
 
-    #  People Segmentation
+    # People Segmentation
     python "segment people/pepole segmentation.py"
 
 ---
@@ -190,11 +190,11 @@ Steps:
 ## 📜 License
 
 No license has been specified yet.  
-Consider adding one (e.g., MIT License) if you plan to publish or distribute the project.
 
 ---
 
 ## 👨‍💻 Author
 
-**Samir Mohamed   
-AI Engineer | Data Science & Computer Vision**
+**Samir Mohamed**   
+
+**AI Engineer | Data Science & Computer Vision**
