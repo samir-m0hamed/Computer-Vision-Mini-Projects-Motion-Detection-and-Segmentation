@@ -1,101 +1,201 @@
-# Mini Segmentation Projects
+# 🎯 Segmentation Projects via Mask R-CNN
 
-A compact collection of computer vision mini-projects focused on video analysis, motion monitoring, and segmentation workflows. The repository includes security-oriented detection, live object segmentation, and people segmentation examples.
+A compact and practical collection of **computer vision mini-projects** focused on:
 
-## Overview
+- 🎥 Video Analysis  
+- 🚨 Motion Detection & Monitoring  
+- 🧠 Object & People Segmentation  
 
-This repository demonstrates practical computer vision pipelines built with Python and OpenCV. Each project is self-contained and can be executed independently.
+These projects demonstrate real-world pipelines using **Python + OpenCV**, with optional use of deep learning models like **Mask R-CNN**.
 
-## Projects
+---
+
+## 📌 Overview
+
+This repository showcases **modular and independent computer vision workflows**, where each project can be executed separately and easily extended.
+
+It is designed for:
+- Learning computer vision fundamentals  
+- Building real-world applications  
+- Rapid prototyping for AI systems  
+
+---
+
+## 📂 Projects
 
 | Project | Description | Main Script |
-| --- | --- | --- |
-| Burglar Detection | Motion-based security monitoring with visual overlays and alarm support | `Burglar detection/burglar detection.py` |
-| Live Object Segmentation | Object segmentation on live video streams | `segment objects from a live video/objects segmentation.py` |
-| People Segmentation | People segmentation for images and masked outputs | `segment people/pepole segmentation.py` |
+|--------|------------|-------------|
+| 🛑 Burglar Detection | Motion-based security system with alerts and recording | `Burglar detection/burglar detection.py` |
+| 🎥 Live Object Segmentation | Real-time object segmentation on live video streams | `segment objects from a live video/objects segmentation.py` |
+| 🧍 People Segmentation | Extract and segment people from images and videos | `segment people/pepole segmentation.py` |
 
-## Repository Structure
+---
+
+## 🗂️ Repository Structure
 
 ```text
 .
+├── README.md
 ├── Burglar detection/
-│   └── burglar detection.py
+│   ├── burglar detection.py
+│   ├── burglar_detection_results/
+│   ├── emergency sound effect/
+│   │   └── Sound Effects Emergency Alarm.mp3
+│   └── videos/
+│       ├── Burglar Robber Break Door Lock Entering Stock Footage Video 100.mp4
+│       └── Burglar Robber Break Door Lock Entering Stock Footage Video 100.mkv
 ├── segment objects from a live video/
 │   └── objects segmentation.py
-├── segment people/
-│   ├── pepole segmentation.py
-│   ├── image/
-│   └── masked images/
-└── README.md
+└── segment people/
+  ├── pepole segmentation.py
+  ├── final result.png
+  ├── image/
+  │   └── group walking.jpg
+  └── masked images/
+    ├── detected_people.jpg
+    ├── full_comparison.jpg
+    └── masked_people.jpg
 ```
 
-## Key Features
+---
 
-- Real-time video processing
-- Motion detection with on-screen annotations
-- Alarm and alert support for security scenarios
-- Object and people segmentation workflows
-- Saved output videos and processed results
+## ⚙️ Key Features
 
-## Requirements
+- ⚡ Real-time video processing  
+- 🎯 Motion detection using frame differencing  
+- 🧱 Contour-based object detection  
+- 🧠 Instance segmentation workflows (Mask R-CNN)  
+- 🚨 Alarm / alert system integration  
+- 💾 Saving processed videos and output masks  
+- 🔧 Configurable thresholds and parameters  
 
-- Python 3.7 or later
+---
+
+## 🧠 How It Works (Technical Insight)
+
+### 🔹 Motion Detection (Burglar Detection)
+- Frame differencing between consecutive frames  
+- Grayscale conversion + Gaussian blur  
+- Thresholding to isolate motion  
+- Contour detection to identify moving objects  
+
+### 🔹 Segmentation (Mask R-CNN)
+- Region Proposal Network (RPN)  
+- ROI Align for precise feature extraction  
+- Pixel-wise mask prediction  
+- Bounding box + class labeling  
+
+---
+
+## 📦 Requirements
+
+Make sure you have:
+
+- Python 3.7+
 - OpenCV
 - NumPy
-- Additional packages depending on the selected script
 
-## Setup
+Optional (depending on project):
+- imutils  
+- Pytorch or TensorFlow / Keras (for Mask R-CNN)  
+- Pretrained weights (COCO dataset)  
 
-1. Clone the repository:
+---
 
-  ```bash
-  git clone https://github.com/samir-m0hamed/projects.git
-  cd projects
-  ```
+## 🚀 Setup
 
-2. Install the core dependencies:
+### 1. Clone the repository
 
-  ```bash
-  pip install opencv-python numpy
-  ```
+    git clone https://github.com/samir-m0hamed/projects.git
+    cd projects
 
-3. If a project requires extra libraries, install them according to the script comments or error messages.
+### 2. Install dependencies
 
-## How to Run
+    pip install opencv-python numpy
 
-Run each project from its folder:
+### 3. Install additional dependencies (if needed)
 
-```bash
-# Burglar Detection
-python "Burglar detection/burglar detection.py"
+    pip install imutils tensorflow keras
 
-# Live Object Segmentation
-python "segment objects from a live video/objects segmentation.py"
+---
 
-# People Segmentation
-python "segment people/pepole segmentation.py"
-```
+## ▶️ How to Run
 
-## Output
+Run each script individually:
 
-- Burglar detection saves processed videos inside `burglar_detection_results/`
-- People segmentation stores generated masks and related images in the `segment people/` folders
-- Each script prints progress and processing details in the terminal
+    # 🛑 Burglar Detection
+    python "Burglar detection/burglar detection.py"
 
-## Notes
+    # 🎥 Live Object Segmentation
+    python "segment objects from a live video/objects segmentation.py"
 
-- The file name `pepole segmentation.py` is preserved as it exists in the project.
-- The burglar detection script is motion-based and not Mask R-CNN based.
-- Some videos may be encoded differently, so frame counts and playback behavior can vary slightly by file.
+    # 🧍 People Segmentation
+    python "segment people/pepole segmentation.py"
 
-## Contributing
+---
 
-Contributions are welcome. If you add new projects, keep the folder structure clear and update this README accordingly.
+## 📤 Output
 
-## License
+- 🎥 Burglar Detection  
+  Saves processed videos inside:  
+  `burglar_detection_results/`
 
-No explicit license has been provided yet. Add one if you plan to share or distribute the repository publicly.
+- 🧍 People Segmentation  
+  Outputs:
+  - Masked images  
+  - Processed results inside:  
+    `segment people/`
 
-## Author
+- 📊 Terminal Output  
+  Each script logs:
+  - Frame processing  
+  - Detection status  
+  - Runtime info  
 
-Samir Mohamed
+---
+
+## 🎯 Use Cases
+
+- 🏠 Home Security Systems  
+- 🏢 Surveillance & Monitoring  
+- 🚶 Human Detection & Tracking  
+- 🎬 Smart Video Processing  
+- 🤖 AI Prototyping  
+
+---
+
+## ⚠️ Notes
+
+- The file name `pepole segmentation.py` is intentionally preserved as-is from the original project.  
+
+- Burglar Detection is **NOT based on deep learning**, it uses traditional computer vision techniques.  
+
+- Video encoding and FPS may affect:
+  - Frame count  
+  - Playback smoothness  
+
+---
+
+## 🤝 Contributing
+
+Contributions are welcome!
+
+Steps:
+1. Fork the repository  
+2. Create a new branch  
+3. Commit your changes  
+4. Open a Pull Request  
+
+---
+
+## 📜 License
+
+No license has been specified yet.  
+Consider adding one (e.g., MIT License) if you plan to publish or distribute the project.
+
+---
+
+## 👨‍💻 Author
+
+**Samir Mohamed   
+AI Engineer | Data Science & Computer Vision**
