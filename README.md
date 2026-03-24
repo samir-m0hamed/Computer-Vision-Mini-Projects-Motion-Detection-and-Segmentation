@@ -1,4 +1,4 @@
-#  Segmentation Projects via Mask R-CNN
+# Computer Vision Mini Projects Motion Detection & Segmentation
 
 A compact and practical collection of **computer vision mini-projects** focused on:
 
@@ -106,7 +106,7 @@ Optional (depending on project):
 
 ### 1. Clone the repository
 
-    git clone https://github.com/samir-m0hamed/projects.git
+    git clone https://github.com/samir-m0hamed/Computer-Vision-Mini-Projects-Motion-Detection-and-Segmentation.git
     cd projects
 
 ### 2. Install dependencies
