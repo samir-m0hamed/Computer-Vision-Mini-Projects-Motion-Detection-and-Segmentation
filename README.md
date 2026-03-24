@@ -61,13 +61,13 @@ It is designed for:
 
 ## ⚙️ Key Features
 
-- ⚡ Real-time video processing  
-- 🎯 Motion detection using frame differencing  
-- 🧱 Contour-based object detection  
-- 🧠 Instance segmentation workflows (Mask R-CNN)  
-- 🚨 Alarm / alert system integration  
-- 💾 Saving processed videos and output masks  
-- 🔧 Configurable thresholds and parameters  
+-  Real-time video processing  
+-  Motion detection using frame differencing  
+-  Contour-based object detection  
+-  Instance segmentation workflows (Mask R-CNN)  
+-  Alarm / alert system integration  
+-  Saving processed videos and output masks  
+-  Configurable thresholds and parameters  
 
 ---
 
@@ -123,30 +123,30 @@ Optional (depending on project):
 
 Run each script individually:
 
-    # 🛑 Burglar Detection
+    #  Burglar Detection
     python "Burglar detection/burglar detection.py"
 
-    # 🎥 Live Object Segmentation
+    #  Live Object Segmentation
     python "segment objects from a live video/objects segmentation.py"
 
-    # 🧍 People Segmentation
+    #  People Segmentation
     python "segment people/pepole segmentation.py"
 
 ---
 
 ## 📤 Output
 
-- 🎥 Burglar Detection  
+-  Burglar Detection  
   Saves processed videos inside:  
   `burglar_detection_results/`
 
-- 🧍 People Segmentation  
+-  People Segmentation  
   Outputs:
   - Masked images  
   - Processed results inside:  
     `segment people/`
 
-- 📊 Terminal Output  
+-  Terminal Output  
   Each script logs:
   - Frame processing  
   - Detection status  
@@ -156,11 +156,10 @@ Run each script individually:
 
 ## 🎯 Use Cases
 
-- 🏠 Home Security Systems  
-- 🏢 Surveillance & Monitoring  
-- 🚶 Human Detection & Tracking  
-- 🎬 Smart Video Processing  
-- 🤖 AI Prototyping  
+-  Home Security Systems  
+-  Surveillance & Monitoring  
+-  Human Detection & Tracking  
+-  Smart Video Processing  
 
 ---
 
